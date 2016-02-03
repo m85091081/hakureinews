@@ -1072,8 +1072,7 @@
 /* Panels */
 
 	#main {
-		position: relative;
-		overflow: hidden;
+		height: 100%;
 	}
 
 	.panel {
