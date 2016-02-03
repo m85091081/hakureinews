@@ -1072,6 +1072,7 @@
 /* Panels */
 
 	#main {
+		position: relative;
 		height: 100%;
 	}
 
