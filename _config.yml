@@ -15,4 +15,3 @@ paginate: 5
 paginate_path: "/page:num/"
 # Build settings
 markdown: kramdown
-timezone : +0800
