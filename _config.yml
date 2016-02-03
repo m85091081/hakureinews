@@ -13,5 +13,6 @@ url: "http://news.hakurei.com.tw" # the base hostname & protocol for your site
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page:num/"
+timezone: Asia/Taipei
 # Build settings
 markdown: kramdown
