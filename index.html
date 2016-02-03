@@ -2,23 +2,16 @@
 layout: default
 ---
 {% for post in paginator.posts %}
-<section id="one">
-	<header class="major">
-			<h2>{{ post.title }} @ {{ post.date | date: "%b %-d, %Y" }}</h2>
-		</header>
-		<div>
+<div>
+<h2>{{ post.title }} @ {{ post.date | date: "%b %-d, %Y" }}</h2>
 			{{ post.content | truncatewords:5}}
-		</div>
-		<div>
 		<ul class="actions left"> 
 		    <li><a>{{ post.date | date: "%b %-d, %Y" }}</a></li>
-			</ul>	
+		</ul>	
 		<ul class="actions right">
 			<li><a href="{{ post.url | prepend: site.baseurl }}" class="button">繼續閱讀</a></li>
 		</ul>
-		<br />
-		</div>
-	</section>
+</div>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
