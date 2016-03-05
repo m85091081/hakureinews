@@ -8,8 +8,8 @@
 # Site settings
 title: 羽天珼岸 . HakureiWing - Powerd by 0MuMDAU
 email: m85091081@gmail.com
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://hakurei.club/blog" # the base hostname & protocol for your site
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://hakurei.club/" # the base hostname & protocol for your site
 gems: [jekyll-paginate]
 paginate: 5
 paginate_path: "/page:num/"
