@@ -1,35 +1,70 @@
 <!DOCTYPE html>
-<html>
-
 {% include head.html %}
-	<body >
-		<div id="wrapper">
-			<nav id="nav">
-				<a href="http://hakurei.com.tw" class="icon fa-home"><span>首頁</span></a>
-				<a href="/" class="icon fa-feed active"><span>最新消息</span></a>
-				<a href="http://hakurei.com.tw/about" class="icon fa-group"><span>關於繪師</span></a>
-				<a href="https://www.facebook.com/HakureiWing/" class="icon fa-facebook"><span>Facebook</span></a>
-			</nav>
-			<div id="main" style="height:100%; background: rgba(255, 255, 255, 0.8); border-radius:10px; width:100%;">
-			   	<article class="panel" id="me" style="margin: 0px auto; height:100%; padding-top:8%; padding-left:4%; padding-right:4%; padding-bottom:4%; ">
-					{{ content }}
-				</article>
+<body style="height:100%;">
+	<div class= "ui container" style="padding-top:2%;">
+	<div class ="ui grid">
+			<div class="four wide column">
+				<img src="/static/img/wind.png" style="width:92%; padding-right:1%; padding-left:2%;">
+				<div style="padding-top:10%;" >
+<div class="ui pointing vertical menu" style="width:90%;" >
+
+  <a class="item" style="pading:1px;">
+	  <h4><i style="padding-right:4px;" class="fa fa-home"></i>  羽天珼岸 HakureiWing </h4>
+  </a>
+  <a class="item active" href="http://news.hakurei.com.tw">
+	 <i style="padding-right:5px;"  class="fa fa-comments"></i> 躲雨閒聊 /..Blog
+  </a>
+  <a class="item" href="https://www.facebook.com/HakureiWing/">
+	  <i style="padding-right:8px;"  class="fa fa-facebook-official"></i> 轉移陣地 /..Facebook
+  </a>
+  <a class="item" href="http://www.pixiv.net/member.php?id=2368608">
+	  <i style="padding-right:5px;"  class="fa fa-picture-o"></i> 雨天塗鴉 /..Gallery
+  </a>
+  <a class="item" href="mailto:contact@hakurei.club">
+	  <i style="padding-right:5px;"  class="fa fa-envelope-o"></i> 買把傘吧 /..Contact
+  </a>
+  <div class="item">
+  </div>
+</div>
+<br>
+<div class="ui horizontal divider" style="width:90%;">
+		      我是賣萌的分割線
+</div>
+<br>
+<div class="ui pointing vertical menu" style="width:90%;" >
+
+  <a class="item" style="pading:1px; background:#FFFFBB;">
+	  <h4><i style="padding-right:5px;"class="fa fa-calendar"></i>  預訂參加場次 </h4>
+  </a>
+  <a class="item">
+	 <i style="padding-right:5px;"  class="fa fa-calendar-check-o "></i> 	PF24
+  </a>
+  <a class="item">
+	 <i style="padding-right:5px;"  class="fa fa-calendar-check-o "></i> 	FF28
+  </a>
+  <div class="item">
+  </div>
+</div>
+				</div>
 			</div>
-			<div id="footer">
-				<ul class="copyright">
-					<li>&copy; 羽天珼岸. HakureiWing</li>
-					<br />
-					<li> Design:零夢 . 背景:Gnlp</li>
-				</ul>
+			<div class ="twelve wide column">
+				<div style="padding-top:2%;" >
+			<div class = "ui segment piled" style="padding:5%;">
+				{{ content }}
+			</div>
 			</div>
 		</div>
-		<!-- Scripts -->
-			<script src="/static/js/jquery.min.js"></script>
-			<script src="/static/js/skel.min.js"></script>
-			<script src="/static/js/skel-viewport.min.js"></script>
-			<script src="/static/js/util.js"></script>
-			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="/static/js/main.js"></script>
-
-	</body>
+	</div>
+	<div class="ui horizontal divider " style="padding-top:3%; width:100%;">
+		<i class="fa fa-copyright"></i>羽天珼岸.HakureiWing / CMS:0Mu-Project / hakurei.club
+	</div>
+	</div>
+		<script>
+$('.ui.sticky')
+.sticky({
+	context: '#nav',
+})
+;
+		</script>
+</body>
 </html>
